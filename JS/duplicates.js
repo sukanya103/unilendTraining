@@ -9,15 +9,11 @@ for(var i=0; i<array.length; i++){
             d =true; 
         }
     }
-
     if(d==n){
-
         dup.push(array[i])
     }
     }
-
     console.log(dup);
 }
-
 duplicate(array, true)
 duplicate(array, false)
