@@ -1,8 +1,8 @@
-var array='abccdnd'
+const array='abccdnd'
 function duplicate(array, n){
     var dup=[];
 for(var i=0; i<array.length; i++){
-    var d = false;
+    let d = false;
     for(var j=i+1; j<array.length; j++){
         if(array[j]==array[i])
         {
