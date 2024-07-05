@@ -2,8 +2,6 @@ const user1 = {
     name: 'anil'
 
 }
-
-
 const user2 = {
     name: 'amruta',
     print: function(age, city){
