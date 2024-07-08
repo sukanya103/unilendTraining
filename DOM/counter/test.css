@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* Maintain padding and margin devisible by 4 */
+
+.container {
+  height: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container h1 {
+  margin: 24px;
+}
+
+.counter {
+  width: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#decrement-btn,
+#increment-btn,
+#reset-btn {
+  width: 100px;
+  height: 48px;
+  padding: 0 32px;
+  margin: 16px;
+  border-radius: 24px;
+  background-color: blueviolet;
+  border: 2px solid blueviolet;
+  cursor: pointer;
+}
+
+.counter-value {
+  height: 48px;
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* #parent {
+  display: flex;
+  flex-direction: column;
+}
+
+#child1,
+#child2 {
+  width: 300px;
+  height: 150px;
+}
+
+#child1 {
+  margin: 60px;
+  background-color: red;
+  padding: 20px;
+  border: 1px solid;
+}
+
+#child2 {
+  margin: 40px;
+  background-color: green;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 1px solid;
+} */
