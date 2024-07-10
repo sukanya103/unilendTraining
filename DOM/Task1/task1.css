@@ -1,0 +1,27 @@
+*{ box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+#input{
+    width: 200px;
+    height: 50px;
+    margin: 20px;
+    font-size: 17px;
+}
+
+#button{
+    width: 20%;
+    height: 40px;
+    margin: 20px;
+}
+p{
+    margin: 10px;
+    color: red;
+}
+
+.box{
+    border: 1px solid black;
+    width: 400px;
+    height: 400px;
+}
