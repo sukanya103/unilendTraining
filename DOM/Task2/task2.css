@@ -1,0 +1,27 @@
+*{ box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+#input1 ,#input2 {
+    width: 200px;
+    height: 50px;
+    margin: 20px;
+    font-size: 17px;
+}
+
+#addbtn {
+    width: 100px;
+    height: 50px;
+    margin: 20px;
+    background-color: black;
+    font-size: 17px;
+    color: white;
+    cursor: pointer;
+}
+
+.msg{
+    margin: 20px;
+    font-size: 17px;
+}
+
