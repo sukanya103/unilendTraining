@@ -10,16 +10,16 @@
     <div class="container">
     <div class="form_container">
         
-        <form class="form">
-            <input type="text" placeholder="First Name " />
-            <input type="text" placeholder="last Name " />
-            <select name="" id=""> 
+        <form id="form">
+            <input id="firstname" type="text" placeholder="First Name " />
+            <input id="lastname"   type="text" placeholder="last Name " />
+            <select id="gender"  name=""> 
                 <option value="male">Male</option>
                 <option value="female">Female</option>
             </select>
-            <input type="date" placeholder="Date of Birth" />
-            <input type="number" placeholder="Contact No." />
-            <input type="submit">
+            <input id="DOB" type="date" placeholder="Date of Birth" />
+            <input id="contactno" type="number" placeholder="Contact No." />
+            <input id="submit" type="submit">
         </form>
     
     </div>
@@ -33,19 +33,12 @@
                 <th>DOB</th>
                 <th>Contact </th>
             </thead>
-            <tbody>
-                <tr> 
-                    <td>1. </td>
-                    <td>Sukanya</td>
-                    <td>Mathapati</td>
-                    <td>Female</td>
-                    <td>10-9-2003</td>
-                     <td>8534525212</td>  
-                    
-                </tr>
+            <tbody id="tbody">
+             
             </tbody>
         </table>
     </div>
 </div>
 </body>
+<script src="form.js"></script>
 </html>
