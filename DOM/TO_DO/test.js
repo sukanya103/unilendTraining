@@ -18,6 +18,10 @@ addBtn.addEventListener("click", () => {
     const taskElement = document.createElement("p");
     const editButton = document.createElement("button");
     const deleteButton = document.createElement("button");
+    deleteButton.addEventListener("click", ()=>{
+            console.log(obj.id);
+            
+    })
     newDiv.setAttribute("id", "task");
     newDiv.appendChild(idElement);
     newDiv.appendChild(taskElement);
@@ -30,3 +34,4 @@ addBtn.addEventListener("click", () => {
     listContainer.appendChild(newDiv);
   }
 });
+
