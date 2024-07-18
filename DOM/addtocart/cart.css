@@ -1,0 +1,73 @@
+.header{
+    text-align: center;   
+}
+.container{
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    padding: 10px;
+}
+.container>div>h3{
+    font-size: 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container >div{
+  border: 1px solid black;
+  width: 44%;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 5px 5px 5px gray;
+  background-color: rgb(248, 250, 251);
+  
+}
+.container>div>h5{
+    text-align: right;
+    font-size: 20px;
+    color: rgb(219, 112, 18);
+}
+.container>div>button{
+    width: 100% 
+}
+
+div> button{
+    background-color: rgb(97, 37, 237);
+    color: rgb(250, 249, 247);
+    cursor: pointer;
+    height: 40px;
+}
+
+div>p{
+    color: rgb(93, 93, 148);
+}
+
+/* .header2{
+    width: 50%;
+    
+} */
+
+.content{
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+}
+
+.header2{
+    width: 50%;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.header2> div>p {
+    color: black;
+    
+    
+}
+
+.header2> div {
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid black;
+    
+    margin: 10px;
+}
