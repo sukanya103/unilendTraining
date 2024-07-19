@@ -7,13 +7,14 @@ let arr=[{id:1, Name:'shoes', description:'Lorem ipsum dolor sit amet consectetu
     {id:4, Name:'Mackup', description:'Lorem ipsum dolor sit amet consectetur, adipisicing elit.', price:5000, add_to_cart:false, quantity:"1"},
  ];
 
-let mycart=[] 
+let mycart=[] || localStorage.getItem('cart')
 
 
 window.addEventListener("load", ()=>{
     print(arr); //pass function with parameters
-    cart(mycart)
-
+    
+    cart(mycart.length ? mycart :JSON.parse(localStorage.getItem('cart')) )
+    
 })
 
 function print(data) {
@@ -106,13 +107,25 @@ function cart(mycart) {
       header2.appendChild(newDiv);
 }
 
-
-
-}
+    const newDiv2= document.createElement("div")
+    const tprice=document.createElement("h3")
+    const p2=document.createElement("p")
+    p2.innerHTML="Total"
+    console.log(mycart)
+    total=0
+    for(let i=0; i<mycart.length; i++){
+            total=total+(mycart[i].price*mycart[i].quantity)
+        
+    }
+ 
+  tprice.innerHTML = total
+    newDiv2.appendChild(p2);
+    newDiv2.appendChild(tprice)
+    header2.appendChild(newDiv2)
+} 
 
 function addcart(id){
     console.log(id)
-  
     for(let i=0; i<arr.length; i++){
         if(id==arr[i].id){
             const product = {
@@ -121,9 +134,8 @@ function addcart(id){
                 price: arr[i].price
             }
             mycart.push(product)
+            localStorage.setItem('cart', JSON.stringify(mycart))
         }
     }
-   
     cart(mycart)
-
 }
