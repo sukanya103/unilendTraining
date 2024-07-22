@@ -1,0 +1,51 @@
+#profile_img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 20px;
+    margin: auto;
+    position: relative;
+    top: 50px;
+   
+}
+.profile{
+    width: 80%;
+    display: grid;
+    align-items: center;
+  
+    margin: auto;
+}
+.container{
+    width: 40%;
+    border: 1px solid black;
+    margin: auto;
+    height: 300px;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+
+.data{
+    background-color: rgb(200, 243, 243);
+    border-radius: 10px;
+    width: 80%;
+    
+    padding: 20px;
+    padding-top: 80px;
+   margin: auto;
+}
+
+.slides{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    cursor: pointer;
+}
+.demo{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: 1s ;
+}
