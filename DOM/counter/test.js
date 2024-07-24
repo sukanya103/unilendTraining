@@ -14,11 +14,12 @@ function decrement(){
   console.log("countValue", countValue);
   countValue.innerHTML = counter;
 }
+
 decrementBtn.addEventListener("click",decrement);
 
 incrementBtn.addEventListener("click", () => {
   counter++;
-  countValue.innerHTML = counter;
+  // countValue.innerHTML = counter;
   console.log("counter", counter);
 });
 
