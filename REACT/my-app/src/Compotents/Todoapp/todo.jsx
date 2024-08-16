@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import React from "react";
 
 export default function TodoInput(){
@@ -22,8 +22,29 @@ export default function TodoInput(){
         setTodos(todos.concat([obj]));
         console.log(todos)
     };
+
+    useEffect(()=>{
+      localStorage.setItem("todolist", JSON.stringify(todos))
+    }, [todos])
     
-    
+    function editTask(id) {
+        console.log(id);
+        const editarr = [];
+      
+        for (let i = 0; i < todos.length; i++) {
+          if (id == todos[i].id) {
+            const obj = {
+              id: todos[i].id,
+              text: Input
+            };
+            editarr.push(obj);
+          } else {
+            editarr.push(todos[i]);
+          }
+        }
+        setTodos(editarr);
+      }
+
 
     return(
         <div className="container">
@@ -31,17 +52,27 @@ export default function TodoInput(){
                 <input onChange={saveInput} type="text" />
                 <button onClick={addTask}> Add</button>
                 
+                {/* <button onClick={}> Delete </button> */}
+                
             </div>
             {
                 todos.map((todo, i)=> {
                     return (
-                        <p>
+                        <div>
+                            <p>
                           {i}  {todo.id} {todo.text}
+                    
                         </p>
-                    )
-                }
-            )
-        }</div>
+                        <button onClick={()=>{
+                                editTask(todo.id)
+                            }}> Edit </button>
+
+                        </div>
+                    )})
+            }
+
+           
+        </div>
     )
 }
 

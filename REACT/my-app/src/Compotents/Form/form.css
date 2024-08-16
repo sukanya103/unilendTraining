@@ -1,0 +1,51 @@
+.container{
+    /* display: flex;
+    flex-direction: column; */
+    height: max-content;
+    width: 400px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: blanchedalmond;
+}
+
+.container #form{
+    height: 50px;
+    margin: 10px;
+}
+.container #formsub{
+    height: 50px;
+    width: 70px;
+    border-radius: 30%;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.data{
+    height: max-content;
+    width: 400px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 15px;
+    background-color: rgb(50, 29, 75);
+    color: white;
+    
+    
+}
+.data p{
+    justify-items: center;
+    font-weight: 500;
+    margin: 5px;
+}
+.upper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.info{
+    font-style: italic;
+    font-size: 15px;
+    
+}

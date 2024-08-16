@@ -15,6 +15,5 @@ button.forEach(element=> {
             user_intput.innerHTML+= e.target.textContent
         }
         user_intput.scrollLeft= user_intput.scrollWidth
-
     })
 })
